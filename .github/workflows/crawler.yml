@@ -1,7 +1,8 @@
 name: Hot News Crawler
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 1 * * *"   # 每天 01:00 UTC → 北京时间 09:00
+    - cron: "0 5 * * *"   # 每天 05:00 UTC → 北京时间 13:00
   workflow_dispatch:
 
 concurrency:
